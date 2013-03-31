@@ -3,10 +3,8 @@ $:.push File.expand_path("../lib", __FILE__)
 require "country_select/version"
 
 Gem::Specification.new do |s|
-  s.name        = "country_select"
+  s.name        = "tastebook_country_select"
   s.version     = CountrySelect::VERSION
-  s.authors     = ["Stefan Penner"]
-  s.email       = ["stefan.penner@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Country Select Plugin}
   s.description = %q{Provides a simple helper to get an HTML select list of countries.  The list of countries comes from the ISO 3166 standard.  While it is a relatively neutral source of country names, it will still offend some users.}

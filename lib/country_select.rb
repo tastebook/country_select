@@ -65,6 +65,7 @@ module ActionView
       end
 
       # All the countries included in the country_options output.
+      CountryCodes.load_countries_from_yaml
       COUNTRIES = (CountryCodes.countries_for_select('name', 'a2') - 
                    [["Indonesia", "ID"],["Ghana", "GH"],["Nigeria", "NG"], ["Antartica", "AQ"], ["Puerto Rico", "PR"]]).sort
     end

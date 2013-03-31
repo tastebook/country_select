@@ -52,7 +52,7 @@ module CountryCodes # :nodoc:
   
   def self.load_countries_from_yaml
     # Load countries
-    countries_from_file = YAML::load(File.expand_path(File.join(File.dirname(__FILE__), 'countries.yml')))
+    countries_from_file = YAML::load(File.open(File.expand_path(File.join(File.dirname(__FILE__), 'countries.yml'))))
     
     # Build indexes for each attribute
     @countries = {}    
